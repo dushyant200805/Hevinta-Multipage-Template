@@ -1,17 +1,14 @@
-import { useEffect } from 'react'
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';  
-
-
 function App() {
-useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []); 
 
   return (
-    <>
-        <Home/>
+    <>  
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+
     </>
   )
 }

@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 // ================= UI Framework =================
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -6,21 +7,23 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 // ================= Project CSS =================
 import "../includes/css/mainstyle.css";
 import "../includes/css/style.css";
-function header() {
+function Header() {
   return (
     // <!-- header -->
     <header className="position-absolute w-100">
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           {/* <!-- Logo --> */}
-          <a className="navbar-brand py-2" href="index.html">
+          <Link to="/" className="navbar-brand py-2">
             <img src="logo-light.png" data-logo="light" className="object-fit-contain" height="80" alt="logo-light"/>
-          </a>
+          </Link>
 
           {/* <!-- Offcanvas Menu --> */}
           <div className="offcanvas offcanvas-end" id="offcanvasNavbar2">
             <div className="offcanvas-header justify-content-between head-bg">
-              <img src="logo-light.png" data-logo="light" className="object-fit-contain" height="80" alt="logo-light"/>
+            <Link to="/" className="navbar-brand py-2">
+               <img src="logo-light.png" data-logo="light" className="object-fit-contain" height="80" alt="logo-light"/>
+              </Link>
 
               <button type="button" className="btn prime-btn lh-1 rounded-0 close" data-bs-dismiss="offcanvas" aria-label="Close">
                 <i className="fa-solid fa-xmark fs-5"></i>
@@ -29,24 +32,34 @@ function header() {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-center flex-grow-1 pe-3 gap-lg-3" id="nav_ul">
                 <li className="nav-item active">
-                  <a className="nav-link text-uppercase fw-semibold" aria-current="page" href="index.html">
-                    Home
-                  </a>
+                   <Link to="/" className="nav-link text-uppercase fw-semibold" aria-current="page">
+                       Home                     
+                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-uppercase fw-semibold" href="about.html">about</a>
+                  <Link to="/about" className="nav-link text-uppercase fw-semibold" >
+                       about                  
+                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-uppercase fw-semibold" href="cause.html">causes</a>
+                   <Link to="/causes" className="nav-link text-uppercase fw-semibold">
+                      causes               
+                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-uppercase fw-semibold" href="events.html">events</a>
+                  <Link to="/events" className="nav-link text-uppercase fw-semibold" >
+                      Events             
+                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-uppercase fw-semibold" href="events-detail.html">event details</a>
+                  <Link to="/Events-Destails" className="nav-link text-uppercase fw-semibold" >
+                      Events Destails                
+                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-uppercase fw-semibold" href="contact.html">contact</a>
+                  <Link to="/Contact" className="nav-link text-uppercase fw-semibold" >
+                      Contact              
+                   </Link>
                 </li>
               </ul>
             </div>
@@ -69,4 +82,4 @@ function header() {
     </header>
   );
 }
-export default header;
+export default Header;
