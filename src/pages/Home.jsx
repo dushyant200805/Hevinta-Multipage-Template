@@ -2,7 +2,7 @@ import Header from "../layout/Header";
 // import Footer from "../layout/Footer";
 
 import Banner from "../section/Banner";
-// import CoreSection from "../section/CoreSection";
+import CoreSection from "../section/CoreSection";
 // import Story from "../section/Story";
 // import Cause from "../section/Cause";
 // import Counter from "../section/Counter";
@@ -17,16 +17,16 @@ function Home() {
     <>
       <Header />
       <Banner />
-      {/* <CoreSection />
-      <Story />
-      <Cause />
-      <Counter />
-      <Mission />
-      <Volunteers />
-      <Donation />
-      <Testimonial />
-      <Newsletter />
-      <Footer /> */}
+      <CoreSection />
+      {/* <Story /> */}
+      {/* <Cause /> */}
+      {/* <Counter /> */}
+      {/* <Mission /> */}
+      {/* <Volunteers /> */}
+      {/* <Donation /> */}
+      {/* <Testimonial /> */}
+      {/* <Newsletter /> */}
+      {/* <Footer /> */}
     </>
   );
 }
