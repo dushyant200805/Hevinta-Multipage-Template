@@ -52,8 +52,8 @@ function Header() {
                    </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/Events-Destails" className="nav-link text-uppercase fw-semibold" >
-                      Events Destails                
+                  <Link to="/Events Destails" className="nav-link text-uppercase fw-semibold" >
+                      Event Details                
                    </Link>
                 </li>
                 <li className="nav-item">
@@ -72,8 +72,8 @@ function Header() {
               <i className="fa-solid fs-5 prime-text fa-bars-staggered white-text"></i>
             </button>
             {/* <!-- Theme Switch Button --> */}
-            <button className="btn prime-btn theme-btn border rounded-0 px-3 py-2" aria-label="theme-switch button" id="btnSwitch">
-              <i className="fa-solid fs-5 prime-text fa- white-text"></i>
+            <button className="btn prime-btn theme-btn border rounded-0" aria-label="theme-switch button" id="btnSwitch">
+              {/* <i className="fa-solid fs-5 prime-text fa- white-text"></i> */}
               <FontAwesomeIcon icon="fa-solid fa-moon" />
             </button>
           </div>

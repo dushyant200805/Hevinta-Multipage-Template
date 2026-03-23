@@ -27,7 +27,7 @@ function Banner() {
             <div className="splide__track">
                 <ul className="splide__list">
                     <li className="splide__slide slide-1">
-                        <div className="container d-flex align-items-center justify-content-center h-100" data-aos="fade-up"  data-aos-duration="1500">
+                        <div className="container d-flex align-items-center justify-content-center h-100">
                             <div className="splide-container text-center z-1">
                                 <p className="prime-text second-font text-capitalize fw-bold mb-2 fs-1">
                                     Welcome to Hevinta
@@ -50,7 +50,7 @@ function Banner() {
                         </div>
                     </li>
                     <li className="splide__slide slide-2">
-                        <div className="container d-flex align-items-center justify-content-center h-100" data-aos="fade-up"  data-aos-duration="1500">
+                        <div className="container d-flex align-items-center justify-content-center h-100">
                             <div className="splide-container text-center z-1">
                                 <p className="prime-text second-font text-capitalize fw-bold mb-2 fs-1">
                                     Welcome to Hevinta
@@ -73,7 +73,7 @@ function Banner() {
                         </div>
                     </li>
                     <li className="splide__slide slide-3">
-                        <div className="container d-flex align-items-center justify-content-center h-100" data-aos="fade-up"  data-aos-duration="1500">
+                        <div className="container d-flex align-items-center justify-content-center h-100">
                             <div className="splide-container text-center z-1">
                                 <p className="prime-text second-font text-capitalize fw-bold mb-2 fs-1">
                                     Welcome to Hevinta
